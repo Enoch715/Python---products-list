@@ -20,7 +20,7 @@ if add =='y':
 		name = input('請輸入商品名稱: ')
 		if name == 'q' or name == 'Q':
 			break
-		elif name in range(products):
+		elif name in products:
 			print('此商品已在清單中')
 			print('')
 		else:
