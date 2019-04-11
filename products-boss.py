@@ -40,6 +40,7 @@ if choose == 1:
 
 #查詢商品價格
 	if search == 'y':
+		choose01 = 0
 		while True:
 			productname = input('請輸入要查詢的商品: ')
 			print('')
@@ -51,7 +52,8 @@ if choose == 1:
 					if productname in product: 
 						print('所查詢的商品: ', name, '價格:', price, '元')
 						print('')
-					else:
-						print('未有此商品')
-						print('')
+						choose01 = 1
 						break
+			if choose01 == 0:
+				print('查無此產品')
+				print('')		
