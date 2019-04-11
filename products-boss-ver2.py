@@ -49,7 +49,6 @@ def search_price(filename):
 			if choose == 0:
 				print('查無此產品')
 				print('')		
-#主程式進行
 def main():
 	filename = 'products.csv'
 	if os.path.isfile(filename):
@@ -70,5 +69,5 @@ def main():
 		choose02 = input('是否查詢商品價錢(y/n): ')
 		if choose02 == 'y':
 			search_price(filename)
-
+#主程式進行
 main()
